@@ -1,0 +1,10 @@
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\DataBase\bin\Debug\netcoreapp3.1\DataBase.deps.json
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\DataBase\bin\Debug\netcoreapp3.1\DataBase.dll
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\DataBase\bin\Debug\netcoreapp3.1\DataBase.pdb
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\DataBase\obj\Debug\netcoreapp3.1\DataBase.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\DataBase\obj\Debug\netcoreapp3.1\DataBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\DataBase\obj\Debug\netcoreapp3.1\DataBase.AssemblyInfoInputs.cache
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\DataBase\obj\Debug\netcoreapp3.1\DataBase.AssemblyInfo.cs
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\DataBase\obj\Debug\netcoreapp3.1\DataBase.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\DataBase\obj\Debug\netcoreapp3.1\DataBase.dll
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\DataBase\obj\Debug\netcoreapp3.1\DataBase.pdb
