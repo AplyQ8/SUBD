@@ -16,7 +16,7 @@ namespace DataBase
          
 
         public List<Scheduel> dataBase = new List<Scheduel>();
-        public string path = @"D:\GitHub Repos\SUBD\Scheduel";
+        public string path = @"D:\GitHub Repos\SUBD\Scheduel.txt";
 
         public Scheduel() { }
         public Scheduel(TimeSpan date, int importance, int amountOfSubj, int previousAmount)

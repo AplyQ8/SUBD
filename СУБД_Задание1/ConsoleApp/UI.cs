@@ -9,7 +9,7 @@ namespace ConsoleApp
         {
             Logic logic = new Logic();
             logic.DataCreation();
-            logic.Print();
+            Console.WriteLine(logic.Print());
             bool endPoint = true;
             while (endPoint)
             {
@@ -22,16 +22,13 @@ namespace ConsoleApp
                         {
                             Console.WriteLine("Выберите номер пары, которую хотите проверить");
                             int num = int.Parse(Console.ReadLine());
-                            Console.WriteLine(logic.Suggestion(num));
+                            Console.WriteLine(logic.Suggestion(num-1));
                             break;
                         }
                     case 0:
                         {
-                            int signal = int.Parse(Console.ReadLine());
-                            if (signal == 1)
-                            {
-                                endPoint = false;
-                            }
+                            endPoint = false;
+                           
                             break;
                         }
                 }    

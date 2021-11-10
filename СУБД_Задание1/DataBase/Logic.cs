@@ -33,16 +33,17 @@ namespace DataBase
             double coefficient = 1.0;
             if (scheduel.dataBase[i].date > startTime && scheduel.dataBase[i].date < endTime)
             {
-                coefficient += 0.1;
+                coefficient += 0.4;
             }
-            coefficient -= scheduel.dataBase[i].amountOfSubj * 0.1;
+            coefficient -= scheduel.dataBase[i].amountOfSubj * 0.05;
             coefficient -= scheduel.dataBase[i].previousAmount * 0.08;
             coefficient += scheduel.dataBase[i].importance * 0.005;
             if (coefficient > 0.6)
-                answer = "yes";
+                answer = "Идти";
             else
-                answer = "no";
+                answer = "Не идти";
 
+            Console.WriteLine($"{coefficient.ToString()}");
             return answer;
 
         }

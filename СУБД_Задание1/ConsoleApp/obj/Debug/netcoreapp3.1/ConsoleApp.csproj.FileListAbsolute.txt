@@ -1,0 +1,17 @@
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.exe
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.deps.json
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.runtimeconfig.json
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.runtimeconfig.dev.json
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.dll
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\bin\Debug\netcoreapp3.1\ConsoleApp.pdb
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\bin\Debug\netcoreapp3.1\DataBase.dll
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\bin\Debug\netcoreapp3.1\DataBase.pdb
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.AssemblyInfo.cs
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.csproj.CopyComplete
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.dll
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.pdb
+C:\Users\HYPERPC\source\repos\СУБД_Задание1\ConsoleApp\obj\Debug\netcoreapp3.1\ConsoleApp.genruntimeconfig.cache
