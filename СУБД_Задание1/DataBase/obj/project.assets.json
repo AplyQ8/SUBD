@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HYPERPC\\source\\repos\\СУБД_Задание1\\DataBase\\DataBase.csproj",
+      "projectUniqueName": "D:\\GitHub Repos\\SUBD\\СУБД_Задание1\\DataBase\\DataBase.csproj",
       "projectName": "DataBase",
-      "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\СУБД_Задание1\\DataBase\\DataBase.csproj",
+      "projectPath": "D:\\GitHub Repos\\SUBD\\СУБД_Задание1\\DataBase\\DataBase.csproj",
       "packagesPath": "C:\\Users\\HYPERPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HYPERPC\\source\\repos\\СУБД_Задание1\\DataBase\\obj\\",
+      "outputPath": "D:\\GitHub Repos\\SUBD\\СУБД_Задание1\\DataBase\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HYPERPC\\AppData\\Roaming\\NuGet\\NuGet.Config",

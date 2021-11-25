@@ -32,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HYPERPC\\source\\repos\\СУБД_Задание1\\ConsoleApp\\ConsoleApp.csproj",
+      "projectUniqueName": "D:\\GitHub Repos\\SUBD\\СУБД_Задание1\\ConsoleApp\\ConsoleApp.csproj",
       "projectName": "ConsoleApp",
-      "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\СУБД_Задание1\\ConsoleApp\\ConsoleApp.csproj",
+      "projectPath": "D:\\GitHub Repos\\SUBD\\СУБД_Задание1\\ConsoleApp\\ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\HYPERPC\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HYPERPC\\source\\repos\\СУБД_Задание1\\ConsoleApp\\obj\\",
+      "outputPath": "D:\\GitHub Repos\\SUBD\\СУБД_Задание1\\ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HYPERPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -53,8 +53,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\HYPERPC\\source\\repos\\СУБД_Задание1\\DataBase\\DataBase.csproj": {
-              "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\СУБД_Задание1\\DataBase\\DataBase.csproj"
+            "D:\\GitHub Repos\\SUBD\\СУБД_Задание1\\DataBase\\DataBase.csproj": {
+              "projectPath": "D:\\GitHub Repos\\SUBD\\СУБД_Задание1\\DataBase\\DataBase.csproj"
             }
           }
         }
