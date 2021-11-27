@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\HYPERPC\\source\\repos\\SUBD_Lab_1.0\\UI_layer\\UI_layer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HYPERPC\\source\\repos\\SUBD_Lab_1.0\\DandT_library\\DandT_library.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HYPERPC\\source\\repos\\SUBD_Lab_1.0\\DandT_library\\DandT_library.csproj",
+        "projectName": "DandT_library",
+        "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\SUBD_Lab_1.0\\DandT_library\\DandT_library.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\HYPERPC\\source\\repos\\SUBD_Lab_1.0\\UI_layer\\UI_layer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HYPERPC\\source\\repos\\SUBD_Lab_1.0\\UI_layer\\UI_layer.csproj",
+        "projectName": "UI_layer",
+        "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\SUBD_Lab_1.0\\UI_layer\\UI_layer.csproj",
+        "packagesPath": "C:\\Users\\HYPERPC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HYPERPC\\source\\repos\\SUBD_Lab_1.0\\UI_layer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HYPERPC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\HYPERPC\\source\\repos\\SUBD_Lab_1.0\\DandT_library\\DandT_library.csproj": {
+                "projectPath": "C:\\Users\\HYPERPC\\source\\repos\\SUBD_Lab_1.0\\DandT_library\\DandT_library.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNet.Mvc": {
+              "target": "Package",
+              "version": "[5.2.7, )"
+            },
+            "Microsoft.AspNetCore.StaticFiles": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

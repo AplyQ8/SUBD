@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DandT_library", "DandT_library\DandT_library.csproj", "{B77C2FB0-DBB7-4181-B528-CE08D2717CC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_test", "UI_test\UI_test.csproj", "{B0BAB4D0-FA5F-4A56-8A40-F16B3062995F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI_layer", "UI_layer\UI_layer.csproj", "{DCBA5B96-9E24-4420-9558-F154EDD80354}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B77C2FB0-DBB7-4181-B528-CE08D2717CC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B77C2FB0-DBB7-4181-B528-CE08D2717CC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B77C2FB0-DBB7-4181-B528-CE08D2717CC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B77C2FB0-DBB7-4181-B528-CE08D2717CC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0BAB4D0-FA5F-4A56-8A40-F16B3062995F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0BAB4D0-FA5F-4A56-8A40-F16B3062995F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0BAB4D0-FA5F-4A56-8A40-F16B3062995F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0BAB4D0-FA5F-4A56-8A40-F16B3062995F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCBA5B96-9E24-4420-9558-F154EDD80354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCBA5B96-9E24-4420-9558-F154EDD80354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCBA5B96-9E24-4420-9558-F154EDD80354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCBA5B96-9E24-4420-9558-F154EDD80354}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6635D6B1-0885-4B9B-905A-D0079E874C8E}
+	EndGlobalSection
+EndGlobal
