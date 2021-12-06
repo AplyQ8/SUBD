@@ -1,0 +1,14 @@
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\bin\Debug\netcoreapp3.1\testSVD.exe
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\bin\Debug\netcoreapp3.1\testSVD.deps.json
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\bin\Debug\netcoreapp3.1\testSVD.runtimeconfig.json
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\bin\Debug\netcoreapp3.1\testSVD.runtimeconfig.dev.json
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\bin\Debug\netcoreapp3.1\testSVD.dll
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\bin\Debug\netcoreapp3.1\testSVD.pdb
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\obj\Debug\netcoreapp3.1\testSVD.csproj.AssemblyReference.cache
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\obj\Debug\netcoreapp3.1\testSVD.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\obj\Debug\netcoreapp3.1\testSVD.AssemblyInfoInputs.cache
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\obj\Debug\netcoreapp3.1\testSVD.AssemblyInfo.cs
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\obj\Debug\netcoreapp3.1\testSVD.csproj.CoreCompileInputs.cache
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\obj\Debug\netcoreapp3.1\testSVD.dll
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\obj\Debug\netcoreapp3.1\testSVD.pdb
+C:\Users\HYPERPC\source\repos\testSVD\testSVD\obj\Debug\netcoreapp3.1\testSVD.genruntimeconfig.cache
