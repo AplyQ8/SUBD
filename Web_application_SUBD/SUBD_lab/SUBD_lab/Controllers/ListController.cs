@@ -8,19 +8,24 @@ using Microsoft.Extensions.Configuration;
 using System.Data.SqlClient;
 using System.Data;
 using SUBD_lab.Models;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
+
 
 
 namespace SUBD_lab.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmployeeController : ControllerBase
+    public class ListController : ControllerBase
     {
         private readonly IConfiguration _configuration;
+        private readonly IWebHostEnvironment _env;
 
-        public EmployeeController(IConfiguration configuration)
+        public ListController(IConfiguration configuration, IWebHostEnvironment env)
         {
             _configuration = configuration;
+            _env = env;
         }
 
         [HttpGet]
@@ -28,7 +33,7 @@ namespace SUBD_lab.Controllers
         public JsonResult Get()
         {
             string query = @"
-            select UserID, UserLogin, Department, UserName, UserSecondname, DateOfJoining, PhotoFileName from dbo.Employee";
+            select ProductId, ProductName, ProductCount, ProductCost from dbo.List";
             DataTable table = new DataTable();
 
             string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
@@ -49,11 +54,16 @@ namespace SUBD_lab.Controllers
 
         [HttpPost]
 
-        public JsonResult Registartion(Employees emp)
+        public JsonResult Registartion(List list)
         {
             string query = @"
-            insert into dbo.Employee values
-            ('"+emp.Login+@"')
+            insert into dbo.List
+            (ProductName,ProductCount,ProductCost)
+            values
+            ('" + list.Name + @"'
+             ,'" + list.Count + @"'
+             ,'" + list.Cost + @"'
+            )
             ";
             DataTable table = new DataTable();
 
@@ -75,12 +85,12 @@ namespace SUBD_lab.Controllers
 
         [HttpPut]
 
-        public JsonResult Update(Employees emp)
+        public JsonResult Update(List list)
         {
             string query = @"
-            update dbo.Employee set UserLogin = 
-            '"+emp.Login+@"'
-            where UserId = " + emp.ID + @"
+            update dbo.List set ProductCount= 
+            '"+list.Count+@"'
+            where ProductId=" + list.ID + @"
             ";
             DataTable table = new DataTable();
 
@@ -100,13 +110,13 @@ namespace SUBD_lab.Controllers
             return new JsonResult("Updated Successfully");
         }
 
-        [HttpDelete]
+        [HttpDelete("{id}")]
 
         public JsonResult Delete(int id)
         {
             string query = @"
-            delete from dbo.Employee
-            where UserId = " + id + @"
+            delete from dbo.List
+            where ProductId = " + id + @"
             ";
             DataTable table = new DataTable();
 
@@ -125,5 +135,33 @@ namespace SUBD_lab.Controllers
             }
             return new JsonResult("Deleted Successfully");
         }
+
+        [Route("Save File")]
+        [HttpPost]
+        
+        public JsonResult SaveFile()
+        {
+            try
+            {
+                var httpRequest = Request.Form;
+                var postedFile = httpRequest.Files[0];
+                string fileName = postedFile.FileName;
+                var physicalPath = _env.ContentRootPath + "/Photoes/" + fileName;
+
+                using (FileStream fs = new FileStream(physicalPath, FileMode.Create))
+                {
+                    postedFile.CopyTo(fs);
+                }
+                return new JsonResult(fileName);
+            }
+            catch (Exception)
+            {
+
+                return new JsonResult("default.png");
+            }
+
+            
+        }
+
     }
 }

@@ -7,6 +7,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.Extensions.FileProviders;
+using System.IO;
+using System.Text.Json;
+using Newtonsoft.Json.Serialization;
 
 namespace SUBD_lab
 {
@@ -26,6 +30,15 @@ namespace SUBD_lab
                 c.AddPolicy("AllowOrigin", options=>options.AllowAnyOrigin().AllowAnyMethod()
                 .AllowAnyHeader());
             });
+
+            services.AddControllersWithViews()
+                .AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft
+                .Json.ReferenceLoopHandling.Ignore)
+                .AddNewtonsoftJson(options => options.SerializerSettings.ContractResolver
+                = new DefaultContractResolver());
+                
+                
 
             
             services.AddRazorPages();
@@ -55,6 +68,14 @@ namespace SUBD_lab
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapRazorPages();
+                endpoints.MapControllers();
+            });
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(
+                    Path.Combine(Directory.GetCurrentDirectory(), "Photoes")),
+                RequestPath = "/Photoes"
             });
         }
     }
