@@ -10,6 +10,7 @@ using System.Data;
 using SUBD_lab.Models;
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
+using MySql.Data.MySqlClient;
 
 
 
@@ -32,8 +33,10 @@ namespace SUBD_lab.Controllers
 
         public JsonResult Get()
         {
-            string query = @"
-            select ProductId, ProductName, ProductCount, ProductCost from dbo.List";
+            string query = @"select ProductId,ProductName,ProductCount,ProductCost
+                            
+                            from dbo.List";
+
             DataTable table = new DataTable();
 
             string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
@@ -56,15 +59,11 @@ namespace SUBD_lab.Controllers
 
         public JsonResult Registartion(List list)
         {
-            string query = @"
-            insert into dbo.List
-            (ProductName,ProductCount,ProductCost)
-            values
-            ('" + list.Name + @"'
-             ,'" + list.Count + @"'
-             ,'" + list.Cost + @"'
-            )
-            ";
+            string query = string.Format("insert into dbo.List" +
+             "(ProductName,ProductCount,ProductCost) values(@ProductName, @ProductCount, @ProductCost)");
+
+
+
             DataTable table = new DataTable();
 
             string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
@@ -74,6 +73,11 @@ namespace SUBD_lab.Controllers
                 myCon.Open();
                 using (SqlCommand command = new SqlCommand(query, myCon))
                 {
+                    command.Parameters.AddWithValue("@ProductName", list.Name);
+                    command.Parameters.AddWithValue("@ProductCount", list.Count);
+                    command.Parameters.AddWithValue("@ProductCost", list.Cost);
+
+
                     myReader = command.ExecuteReader();
                     table.Load(myReader); ;
                     myReader.Close();

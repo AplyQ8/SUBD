@@ -1,32 +1,23 @@
-import logo from './logo.svg';
+
+import React from "react";
 import './App.css';
-
-import {Home} from './Home.js';
-import {List} from './YourList.js';
-import {Navigation} from './Navigation.js';
-
-import {BrowserRouter, Route} from 'react-router-dom';
-import { Router } from 'react-router-dom';
-import {Routes} from 'react-router-dom';
- 
+import Navbar from "./Components/NavBar/NavBar";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from './Pages/Home';
+import Contact from './Pages/Contact';
+import List from './Pages/List.JS';
 
 function App() {
   return (
-    <BrowserRouter>
-    <div className="container">
-      <h3 className="m-3 d-flex justify-content-center"> 
-      Welcome to our website!
-      </h3>
-
-      <Navigation/>
-      
+    <Router>
+      <Navbar />
       <Routes>
-        <Route path='/Home' сomponent={Home} exact/>
-        <Route path='/PersonalList' сomponent={List} exact/>
+        <Route path="/" exact component={Home} />
+        <Route path="/PersonalList" components={List} />
+        <Route path="/contact" component={Contact} />
+        
       </Routes>
-      
-    </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 

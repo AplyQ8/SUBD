@@ -56,3 +56,12 @@ D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\obj\Debug\net5.0\SUB
 D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\obj\Debug\net5.0\ref\SUBD_lab.dll
 D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\obj\Debug\net5.0\SUBD_lab.pdb
 D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\obj\Debug\net5.0\SUBD_lab.genruntimeconfig.cache
+D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\bin\Debug\net5.0\MySql.Data.dll
+D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\bin\Debug\net5.0\Google.Protobuf.dll
+D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\bin\Debug\net5.0\ZstdNet.dll
+D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
+D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\bin\Debug\net5.0\Ubiety.Dns.Core.dll
+D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\bin\Debug\net5.0\K4os.Compression.LZ4.dll
+D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\bin\Debug\net5.0\K4os.Hash.xxHash.dll
+D:\GitHub Repos\SUBD\Web_application_SUBD\SUBD_lab\SUBD_lab\bin\Debug\net5.0\MySql.Data.xml
