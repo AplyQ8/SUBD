@@ -12,17 +12,20 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using MySql.Data.MySqlClient;
 
-
-
 namespace SUBD_lab.Controllers
 {
+   
     [Route("api/[controller]")]
     [ApiController]
+    
+        
     public class ListController : ControllerBase
     {
         private readonly IConfiguration _configuration;
         private readonly IWebHostEnvironment _env;
-
+        
+        
+       
         public ListController(IConfiguration configuration, IWebHostEnvironment env)
         {
             _configuration = configuration;
@@ -57,12 +60,11 @@ namespace SUBD_lab.Controllers
 
         [HttpPost]
 
-        public JsonResult Registartion(List list)
+        public JsonResult Post(List list)
         {
-            string query = string.Format("insert into dbo.List" +
-             "(ProductName,ProductCount,ProductCost) values(@ProductName, @ProductCount, @ProductCost)");
-
-
+            
+            string query = @"insert into dbo.List (ProductName,ProductCount,ProductCost)
+            values (@ProductName, @ProductCount, @ProductCost)";
 
             DataTable table = new DataTable();
 
@@ -73,11 +75,10 @@ namespace SUBD_lab.Controllers
                 myCon.Open();
                 using (SqlCommand command = new SqlCommand(query, myCon))
                 {
-                    command.Parameters.AddWithValue("@ProductName", list.Name);
-                    command.Parameters.AddWithValue("@ProductCount", list.Count);
-                    command.Parameters.AddWithValue("@ProductCost", list.Cost);
-
-
+                    command.Parameters.AddWithValue("@ProductName", list.ProductName);
+                    command.Parameters.AddWithValue("@ProductCount", list.ProductCount);
+                    command.Parameters.AddWithValue("@ProductCost", list.ProductCost);
+                   
                     myReader = command.ExecuteReader();
                     table.Load(myReader); ;
                     myReader.Close();
@@ -92,10 +93,7 @@ namespace SUBD_lab.Controllers
         public JsonResult Update(List list)
         {
             string query = @"
-            update dbo.List set ProductCount= 
-            '"+list.Count+@"'
-            where ProductId=" + list.ID + @"
-            ";
+            update dbo.List set ProductName=@ProductName, ProductCount=@ProductCount, ProductCost=@ProductCost where ProductId=@ProductId";
             DataTable table = new DataTable();
 
             string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
@@ -105,6 +103,11 @@ namespace SUBD_lab.Controllers
                 myCon.Open();
                 using (SqlCommand command = new SqlCommand(query, myCon))
                 {
+                    command.Parameters.AddWithValue("@ProductId", list.ProductId);
+                    command.Parameters.AddWithValue("@ProductName", list.ProductName);
+                    command.Parameters.AddWithValue("@ProductCount", list.ProductCount);
+                    command.Parameters.AddWithValue("@ProductCost", list.ProductCost);
+                    
                     myReader = command.ExecuteReader();
                     table.Load(myReader); ;
                     myReader.Close();
@@ -140,32 +143,59 @@ namespace SUBD_lab.Controllers
             return new JsonResult("Deleted Successfully");
         }
 
-        [Route("Save File")]
-        [HttpPost]
-        
-        public JsonResult SaveFile()
+        [Route("{id}/increment")]
+        [HttpPut]
+        public void Increment(int id)
         {
-            try
-            {
-                var httpRequest = Request.Form;
-                var postedFile = httpRequest.Files[0];
-                string fileName = postedFile.FileName;
-                var physicalPath = _env.ContentRootPath + "/Photoes/" + fileName;
-
-                using (FileStream fs = new FileStream(physicalPath, FileMode.Create))
-                {
-                    postedFile.CopyTo(fs);
-                }
-                return new JsonResult(fileName);
-            }
-            catch (Exception)
-            {
-
-                return new JsonResult("default.png");
-            }
-
             
-        }
+            string query = @"update dbo.List set ProductCount=ProductCount+1 where ProductId=@ProductId";
+            DataTable table = new DataTable();
 
+            string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand command = new SqlCommand(query, myCon))
+                {
+                    command.Parameters.AddWithValue("@ProductId", id);
+                    
+                    myReader = command.ExecuteReader();
+                    table.Load(myReader); ;
+                    myReader.Close();
+                    myCon.Close();
+                }
+            }
+        }
+        [Route("{id}/{count}/decrease")]
+        [HttpPut]
+        public void Decrease(int id, int count)
+        {
+           
+            if (count == 1)
+            {
+                Delete(id);
+                return;
+            }
+            string query = @"update dbo.List set ProductCount=ProductCount-1 where ProductId=@ProductId";
+            DataTable table = new DataTable();
+
+            string sqlDataSource = _configuration.GetConnectionString("EmployeeAppCon");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand command = new SqlCommand(query, myCon))
+                {
+                    command.Parameters.AddWithValue("@ProductId", id);
+                    myReader = command.ExecuteReader();
+                    table.Load(myReader); ;
+                    myReader.Close();
+                    myCon.Close();
+                }
+            }
+        }
     }
+    
 }
+

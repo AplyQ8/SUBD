@@ -32,8 +32,8 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/home" component={Home}/>
-        <Route path="/list" component={List}/>
+        <Route path="/home" element={<Home />}></Route>
+        <Route path="/list" element={<List />}></Route>
       </Routes>
 
     </div>
