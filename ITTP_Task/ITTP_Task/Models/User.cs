@@ -7,7 +7,7 @@ namespace ITTP_Task.Models
 {
     public class User
     {
-        Guid Guid;
+        public Guid Guid;
         public string login;
         public string password;
         public string name;

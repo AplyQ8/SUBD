@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITTP_Task", "ITTP_Task\ITTP_Task.csproj", "{E488228B-B67D-4E4F-80CA-71C43C6EEDE0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITTP_Task", "ITTP_Task\ITTP_Task.csproj", "{0F24D8FA-92F3-4002-B161-CB018C2ED7A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E488228B-B67D-4E4F-80CA-71C43C6EEDE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E488228B-B67D-4E4F-80CA-71C43C6EEDE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E488228B-B67D-4E4F-80CA-71C43C6EEDE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E488228B-B67D-4E4F-80CA-71C43C6EEDE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F24D8FA-92F3-4002-B161-CB018C2ED7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F24D8FA-92F3-4002-B161-CB018C2ED7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F24D8FA-92F3-4002-B161-CB018C2ED7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F24D8FA-92F3-4002-B161-CB018C2ED7A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {675A09D4-9B6B-47EC-B1E3-6A0E202C3ADC}
+		SolutionGuid = {30B948BC-5C37-4508-9D12-E8BE70F0D111}
 	EndGlobalSection
 EndGlobal

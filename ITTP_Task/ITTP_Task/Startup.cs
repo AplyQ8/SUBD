@@ -39,7 +39,7 @@ namespace ITTP_Task
 
             //Enable CORS
             services.AddCors(c => {
-                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod() 
+                c.AddPolicy("AllowOrigin", options => options.AllowAnyOrigin().AllowAnyMethod()
                 .AllowAnyHeader());
             });
 
@@ -73,7 +73,7 @@ namespace ITTP_Task
             });
 
             app.UseSwagger();
-            app.UseSwaggerUI(options=>
+            app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "Task");
             });
